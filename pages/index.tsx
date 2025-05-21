@@ -28,42 +28,42 @@ const gallerySections: GallerySection[] = [
           {
             name: "Delhi Capitals",
             url: "https://www.delhicapitals.in",
-            image: "/images/gallery/ipl/delhicapitals.jpg",
+            image: "/portfolio/images/gallery/ipl/delhicapitals.jpg",
           },
           {
             name: "Gujarat Titans",
             url: "https://www.gujarattitansipl.com",
-            image: "/images/gallery/ipl/gujarattitansipl.jpg",
+            image: "/portfolio/images/gallery/ipl/gujarattitansipl.jpg",
           },
           {
             name: "Kolkata Knight Riders",
             url: "https://www.kkr.in",
-            image: "/images/gallery/ipl/kolkataknightriders.jpg",
+            image: "/portfolio/images/gallery/ipl/kolkataknightriders.jpg",
           },
           {
             name: "Lucknow Super Giants",
             url: "https://www.lucknowsupergiants.in",
-            image: "/images/gallery/ipl/lucknowsupergiants.jpg",
+            image: "/portfolio/images/gallery/ipl/lucknowsupergiants.jpg",
           },
           {
             name: "Mumbai Indians",
             url: "https://www.mumbaiindians.com",
-            image: "/images/gallery/ipl/mumbaiindians.jpg",
+            image: "/portfolio/images/gallery/ipl/mumbaiindians.jpg",
           },
           {
             name: "Punjab Kings",
             url: "https://www.punjabkingsipl.in",
-            image: "/images/gallery/ipl/punjabkingsipl.jpg",
+            image: "/portfolio/images/gallery/ipl/punjabkingsipl.jpg",
           },
           {
             name: "Rajasthan Royals",
             url: "https://www.rajasthanroyals.com",
-            image: "/images/gallery/ipl/rajasthanroyals.jpg",
+            image: "/portfolio/images/gallery/ipl/rajasthanroyals.jpg",
           },
           {
             name: "Royal Challengers Bengaluru",
             url: "https://www.royalchallengers.com",
-            image: "/images/gallery/ipl/royalchallengers.jpg",
+            image: "/portfolio/images/gallery/ipl/royalchallengers.jpg",
           },
         ],
       },
@@ -73,12 +73,12 @@ const gallerySections: GallerySection[] = [
           {
             name: "Barbados Royals",
             url: "https://www.barbadosroyals.com/",
-            image: "/images/gallery/cpl/barbadosroyals.jpg",
+            image: "/portfolio/images/gallery/cpl/barbadosroyals.jpg",
           },
           {
             name: "Trinbago Knight Riders",
             url: "https://www.tkriders.com/",
-            image: "/images/gallery/cpl/trinbagoknightriders.jpg",
+            image: "/portfolio/images/gallery/cpl/trinbagoknightriders.jpg",
           },
         ],
       },
@@ -88,22 +88,22 @@ const gallerySections: GallerySection[] = [
           {
             name: "Abu Dhabi Knight Riders",
             url: "https://www.adkriders.com/",
-            image: "/images/gallery/ilt20/abudhabiknightriders.jpg",
+            image: "/portfolio/images/gallery/ilt20/abudhabiknightriders.jpg",
           },
           {
             name: "The Desert Vipers",
             url: "https://www.thedesertvipers.com/",
-            image: "/images/gallery/ilt20/thedesertvipers.jpg",
+            image: "/portfolio/images/gallery/ilt20/thedesertvipers.jpg",
           },
           {
             name: "Dubai Capitals",
             url: "https://www.gmrsports.in/dubai-capitals",
-            image: "/images/gallery/ilt20/dubaicapitals.jpg",
+            image: "/portfolio/images/gallery/ilt20/dubaicapitals.jpg",
           },
           {
             name: "Gulf Giants",
             url: "https://www.gulfgiants.com/",
-            image: "/images/gallery/ilt20/gulfgiants.jpg",
+            image: "/portfolio/images/gallery/ilt20/gulfgiants.jpg",
           },
         ],
       },
@@ -113,17 +113,17 @@ const gallerySections: GallerySection[] = [
           {
             name: "Los Angeles Knight Riders",
             url: "https://www.lakriders.us/",
-            image: "/images/gallery/mlc/lakriders.jpg",
+            image: "/portfolio/images/gallery/mlc/lakriders.jpg",
           },
           {
             name: "Seattle Orcas",
             url: "https://www.seattleorcas.com/",
-            image: "/images/gallery/mlc/seattleorcas.jpg",
+            image: "/portfolio/images/gallery/mlc/seattleorcas.jpg",
           },
           {
             name: "Washington Freedom",
             url: "https://www.washingtonfreedom.com/",
-            image: "/images/gallery/mlc/washingtonfreedom.jpg",
+            image: "/portfolio/images/gallery/mlc/washingtonfreedom.jpg",
           },
         ],
       },
@@ -133,22 +133,22 @@ const gallerySections: GallerySection[] = [
           {
             name: "ISL",
             url: "https://www.indiansuperleague.com/",
-            image: "/images/gallery/other/indiansuperleague.jpg",
+            image: "/portfolio/images/gallery/other/indiansuperleague.jpg",
           },
           {
             name: "WPL",
             url: "https://www.womenspremierleague.in/",
-            image: "/images/gallery/other/womenspremierleague.jpg",
+            image: "/portfolio/images/gallery/other/womenspremierleague.jpg",
           },
           {
             name: "ICC - Cricket",
             url: "https://www.icc-cricket.com//",
-            image: "/images/gallery/other/icc-cricket.jpg",
+            image: "/portfolio/images/gallery/other/icc-cricket.jpg",
           },
           {
             name: "Pro Kabaddi",
             url: "https://www.prokabaddi.com/",
-            image: "/images/gallery/other/prokabaddi.jpg",
+            image: "/portfolio/images/gallery/other/prokabaddi.jpg",
           },
         ],
       },
@@ -160,12 +160,12 @@ const gallerySections: GallerySection[] = [
       {
         name: "UEFA Fantasy Game",
         url: "https://gaming.uefa.com/en/uclfantasy/create-team",
-        image: "/images/gallery/fantasy/gaminguefa.jpg",
+        image: "/portfolio/images/gallery/fantasy/gaminguefa.jpg",
       },
       {
         name: "Fancode Fantasy",
         url: "#",
-        image: "/images/gallery/fantasy/fancode.jpg",
+        image: "/portfolio/images/gallery/fantasy/fancode.jpg",
       },
     ],
   },
@@ -175,17 +175,17 @@ const gallerySections: GallerySection[] = [
       {
         name: "Predictor",
         url: "#",
-        image: "/images/gallery/interactive/predictor.jpg",
+        image: "/portfolio/images/gallery/interactive/predictor.jpg",
       },
       {
         name: "Wordle-style",
         url: "#",
-        image: "/images/gallery/interactive/wordle.jpg",
+        image: "/portfolio/images/gallery/interactive/wordle.jpg",
       },
       {
         name: "Quiz games",
         url: "#",
-        image: "/images/gallery/interactive/quiz.jpg",
+        image: "/portfolio/images/gallery/interactive/quiz.jpg",
       },
     ],
   },
@@ -195,12 +195,12 @@ const gallerySections: GallerySection[] = [
       {
         name: "Sportz Playground",
         url: "#",
-        image: "/images/gallery/office/sportzplayground.jpg",
+        image: "/portfolio/images/gallery/office/sportzplayground.jpg",
       },
       {
         name: "Fantasy Engine",
         url: "#",
-        image: "/images/gallery/office/fantasyengine.jpg",
+        image: "/portfolio/images/gallery/office/fantasyengine.jpg",
       },
     ],
   },
@@ -301,7 +301,7 @@ export default function Home() {
             className="w-48 h-48 md:w-64 md:h-64 rounded-full overflow-hidden border-4 border-blue-500 shadow-lg"
           >
             <img
-              src="/images/profile/profile.jpg"
+              src="/portfolio/images/profile/profile.jpg"
               alt="Shailesh Mankar"
               className="w-full h-full object-cover"
             />
