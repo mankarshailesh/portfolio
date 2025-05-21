@@ -8,6 +8,8 @@ on:
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
 
     steps:
       - name: Checkout code
@@ -17,15 +19,20 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 18
+          cache: "npm"
 
       - name: Install dependencies
-        run: npm install
+        run: npm ci
 
       - name: Build and export Next.js app
-        run: npm run export
+        run: npm run build
+
+      - name: Create .nojekyll file
+        run: touch out/.nojekyll
 
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           folder: out
           branch: gh-pages
+          clean: true
