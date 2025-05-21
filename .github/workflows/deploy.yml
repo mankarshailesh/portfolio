@@ -27,12 +27,12 @@ jobs:
       - name: Build Next.js app
         run: |
           npm run build
-          touch out/.nojekyll
-          cp out/index.html out/404.html
+          touch dist/.nojekyll
+          cp dist/index.html dist/404.html
 
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          folder: out
+          folder: dist
           branch: gh-pages
           clean: true
