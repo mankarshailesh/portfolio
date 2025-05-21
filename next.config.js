@@ -7,7 +7,6 @@ const nextConfig = {
   basePath: "/portfolio",
   assetPrefix: "/portfolio/",
   trailingSlash: true,
-  distDir: "dist",
 };
 
 module.exports = nextConfig;
