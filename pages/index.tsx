@@ -594,8 +594,8 @@ export default function Home() {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="bg-white rounded-lg shadow p-6 mb-6"
           >
-            <h2 className="text-xl font-semibold mb-2">Professional Summary</h2>
-            <p className="mb-2">
+            <h2 className="text-xl text-blue-600 mb-2">Professional Summary</h2>
+            {/* <p className="mb-2">
               <b>UI Developer with over 15 years of experience</b> in web and
               front-end development. Proficient in building responsive,
               cross-browser-compatible interfaces and CMS-driven websites.
@@ -604,6 +604,30 @@ export default function Home() {
               projects for major sports platforms and fantasy gaming systems.
               Currently working as a contractual UI Developer at Sportz
               Interactive, focusing on scalable in-house platforms.
+            </p> */}
+            <p className="mb-2">
+              <b>UI Developer with over 15 years of experience</b> in front-end
+              and web development,{" "}
+              <b>
+                specializing in turning Figma/XD designs into responsive,
+                pixel-perfect, and cross-browser-compatible interfaces using
+                HTML5 and CSS3.
+              </b>{" "}
+              Proficient in building reusable UI components in JavaScript,
+              React.js, and Next.js, often preparing component structures and UI
+              layouts for handover to the JavaScript team for further
+              functionality and integration.
+            </p>
+            <p className="mb-2">
+              <b>Not a UI/UX Designer</b> — My primary role is front-end
+              implementation, not visual design creation.
+            </p>
+            <p className="mb-2">
+              Proven leadership in guiding UI/CSS teams and delivering scalable,
+              CMS-driven websites and platforms — including major fantasy gaming
+              systems and high-traffic sports media projects. Currently working
+              as a contractual UI Developer at Sportz Interactive, focusing on
+              modular and scalable in-house platform development.
             </p>
           </motion.div>
 
@@ -613,7 +637,7 @@ export default function Home() {
             transition={{ duration: 0.5, delay: 0.3 }}
             className="bg-white rounded-lg shadow p-6 mb-6"
           >
-            <h2 className="text-xl font-semibold mb-2">Work Experience</h2>
+            <h2 className="text-xl text-blue-600 mb-2">Work Experience</h2>
             <ul className="list-disc ml-6">
               <li className="mb-2">
                 <b>Sportz Interactive, Mumbai</b> (Contractual, June 27, 2024 –
@@ -663,7 +687,7 @@ export default function Home() {
             transition={{ duration: 0.5, delay: 0.4 }}
             className="bg-white rounded-lg shadow p-6 mb-6"
           >
-            <h2 className="text-xl font-semibold mb-2">Education</h2>
+            <h2 className="text-xl text-blue-600 mb-2">Education</h2>
             <p>University of Mumbai, Bachelor of Arts (TYBA), 2023 – 2024</p>
           </motion.div>
 
@@ -673,7 +697,7 @@ export default function Home() {
             transition={{ duration: 0.5, delay: 0.5 }}
             className="bg-white rounded-lg shadow p-6 mb-6"
           >
-            <h2 className="text-xl font-semibold mb-2">Skills</h2>
+            <h2 className="text-xl text-blue-600 mb-2">Skills</h2>
             <ul className="list-disc ml-6">
               <li>HTML5, CSS3, SCSS</li>
               <li>JavaScript (Vanilla JS)</li>
@@ -695,11 +719,15 @@ export default function Home() {
             transition={{ duration: 0.5, delay: 0.6 }}
             className="bg-white rounded-lg shadow p-6"
           >
-            <h2 className="text-xl font-semibold mb-2">
+            <h2 className="text-xl text-blue-600 mb-2">
               Languages & Interests
             </h2>
-            <p>Languages: English, Hindi, Marathi</p>
-            <p>Hobbies: Painting, Trekking</p>
+            <p>
+              <b>Languages:</b> English, Hindi, Marathi
+            </p>
+            <p>
+              <b>Hobbies:</b> Painting, Trekking
+            </p>
           </motion.div>
         </div>
       </motion.section>
@@ -715,7 +743,7 @@ export default function Home() {
       >
         <div className="max-w-4xl mx-auto w-full">
           <h2 className="text-3xl font-bold mb-8">Gallery</h2>
-          <div className="overflow-x-auto pb-2 -mx-4 px-4">
+          <div className="overflow-x-auto pb-2 -mx-4 px-4 relative">
             <div className="flex gap-2 min-w-max">
               {gallerySections.map((s, i) => (
                 <motion.button
@@ -735,71 +763,69 @@ export default function Home() {
               ))}
             </div>
           </div>
+        </div>
 
-          {currentSection.title === "Websites" && (
-            <div className="overflow-x-auto pb-2 -mx-4 px-4 mt-4">
-              <div className="flex gap-2 min-w-max">
-                {currentSection.items.map((item, i) => (
-                  <motion.button
-                    key={i}
-                    whileHover={{ scale: 1.05 }}
-                    whileTap={{ scale: 0.95 }}
-                    onClick={() => {
-                      setSubSection(i);
-                    }}
-                    className={`px-3 py-1 rounded whitespace-nowrap ${
-                      subSection === i
-                        ? "bg-blue-600 text-white"
-                        : "bg-gray-200"
-                    }`}
+        {currentSection.title === "Websites" && (
+          <div className="overflow-x-auto pb-2 -mx-4 px-4 relative">
+            <div className="flex gap-2 min-w-max">
+              {currentSection.items.map((item, i) => (
+                <motion.button
+                  key={i}
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                  onClick={() => {
+                    setSubSection(i);
+                  }}
+                  className={`px-3 py-1 rounded whitespace-nowrap ${
+                    subSection === i ? "bg-blue-600 text-white" : "bg-gray-200"
+                  }`}
+                >
+                  {item.name}
+                </motion.button>
+              ))}
+            </div>
+          </div>
+        )}
+
+        {/* Category Description */}
+        {currentSection.description && (
+          <p className="text-sm text-gray-600 my-4 text-center">
+            {currentSection.description}
+          </p>
+        )}
+
+        {/* Masonry/Grid Gallery */}
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+          {currentSubSection.map((item, idx) => (
+            <div
+              key={idx}
+              className="border-2 border-gray-200 rounded-lg shadow-lg overflow-hidden cursor-pointer hover:scale-105 transition-transform flex flex-col"
+              onClick={() => setLightboxImage(item.image)}
+            >
+              <img
+                src={item.image}
+                alt={item.name}
+                className="w-full h-40 object-contain bg-gray-100"
+              />
+              <div className="text-center m-2">
+                {item.url === "#" ? (
+                  <span className="text-gray-500 font-semibold cursor-not-allowed">
+                    {item.name}
+                  </span>
+                ) : (
+                  <a
+                    href={item.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-600 hover:underline font-semibold"
+                    onClick={(e) => e.stopPropagation()}
                   >
                     {item.name}
-                  </motion.button>
-                ))}
+                  </a>
+                )}
               </div>
             </div>
-          )}
-
-          {/* Category Description */}
-          {currentSection.description && (
-            <p className="text-sm text-gray-600 my-4 text-center">
-              {currentSection.description}
-            </p>
-          )}
-
-          {/* Masonry/Grid Gallery */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-            {currentSubSection.map((item, idx) => (
-              <div
-                key={idx}
-                className="border-2 border-gray-200 rounded-lg shadow-lg overflow-hidden cursor-pointer hover:scale-105 transition-transform flex flex-col"
-                onClick={() => setLightboxImage(item.image)}
-              >
-                <img
-                  src={item.image}
-                  alt={item.name}
-                  className="w-full h-40 object-contain bg-gray-100"
-                />
-                <div className="text-center m-2">
-                  {item.url === "#" ? (
-                    <span className="text-gray-500 font-semibold cursor-not-allowed">
-                      {item.name}
-                    </span>
-                  ) : (
-                    <a
-                      href={item.url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-blue-600 hover:underline font-semibold"
-                      onClick={(e) => e.stopPropagation()}
-                    >
-                      {item.name}
-                    </a>
-                  )}
-                </div>
-              </div>
-            ))}
-          </div>
+          ))}
         </div>
       </motion.section>
 
