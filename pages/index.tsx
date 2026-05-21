@@ -595,40 +595,15 @@ export default function Home() {
             className="bg-white rounded-lg shadow p-6 mb-6"
           >
             <h2 className="text-xl text-blue-600 mb-2">Professional Summary</h2>
-            {/* <p className="mb-2">
-              <b>UI Developer with over 15 years of experience</b> in web and
-              front-end development. Proficient in building responsive,
-              cross-browser-compatible interfaces and CMS-driven websites.
-              Skilled in JavaScript, React.js, and various design tools. Proven
-              track record in leading UI/CSS teams and delivering high-impact
-              projects for major sports platforms and fantasy gaming systems.
-              Currently working as a contractual UI Developer at Sportz
-              Interactive, focusing on scalable in-house platforms.
-            </p> */}
-            <p className="mb-2">
-              <b>UI Developer with over 15 years of experience</b> in front-end
-              and web development,{" "}
-              <b>
-                specializing in turning Figma/XD designs into responsive,
-                pixel-perfect, and cross-browser-compatible interfaces using
-                HTML5 and CSS3.
-              </b>{" "}
-              Proficient in building reusable UI components in JavaScript,
-              React.js, and Next.js, often preparing component structures and UI
-              layouts for handover to the JavaScript team for further
-              functionality and integration.
-            </p>
-            <p className="mb-2">
-              <b>Not a UI/UX Designer</b> — My primary role is front-end
-              implementation, not visual design creation.
-            </p>
-            <p className="mb-2">
-              Proven leadership in guiding UI/CSS teams and delivering scalable,
-              CMS-driven websites and platforms — including major fantasy gaming
-              systems and high-traffic sports media projects. Currently working
-              as a contractual UI Developer at Sportz Interactive, focusing on
-              modular and scalable in-house platform development.
-            </p>
+
+
+            <p className="mb-2"><b>UI Developer with 15+ years of experience</b> in front-end and web development, <b>specializing in converting Figma and Adobe XD designs into responsive, pixel-perfect, and cross-browser-compatible interfaces using HTML5, CSS3, JavaScript, React.js, and Next.js.</b> Strong expertise in building reusable UI components, scalable front-end architectures, and modern web interfaces with a focus on performance and maintainability.</p>
+
+            <p className="mb-2">Hands-on experience working extensively with React.js in recent projects, collaborating closely with JavaScript and backend teams to deliver production-ready UI systems and seamless user experiences.</p>
+
+            <p className="mb-2">Experienced in leading UI/CSS teams and contributing to large-scale web platforms, including fantasy gaming products and high-traffic sports media websites. Skilled in creating structured front-end foundations for dynamic applications and CMS-integrated platforms.</p>
+
+            <p className="mb-2">Focused on front-end engineering and implementation, with deep knowledge of responsive development, component-based architecture, and cross-browser compatibility.</p>
           </motion.div>
 
           <motion.div
@@ -637,11 +612,87 @@ export default function Home() {
             transition={{ duration: 0.5, delay: 0.3 }}
             className="bg-white rounded-lg shadow p-6 mb-6"
           >
-            <h2 className="text-xl text-blue-600 mb-2">Work Experience</h2>
+            <h2 className="text-xl text-blue-600 mb-2 font-bold">Work Experience</h2>
             <ul className="list-disc ml-6">
               <li className="mb-2">
-                <b>Sportz Interactive, Mumbai</b> (Contractual, June 27, 2024 –
-                Present)
+                <b>Career Break — Full-time parenting</b> (Jul 2025 – Present)
+                <br />
+                Taking a planned career break for childcare and family responsibilities while continuing to practice UI development, responsive design, and modern CSS frameworks (MUI, Tailwind, Bootstrap).
+                <div className="mt-4 space-y-4 border-l-2 border-blue-500 pl-4">
+                  <p className="font-semibold text-gray-700 text-sm">Key Projects during break:</p>
+
+                  {/* Project 1 */}
+                  <div>
+                    <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-1">
+                      <h4 className="font-bold text-sm text-gray-800">
+                        <a href="https://www.codingkeeda.com" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">
+                          www.codingkeeda.com
+                        </a>{" "}
+                        — Modern Frontend & SEO Learning Platform
+                      </h4>
+                      <span className="text-xs font-semibold text-gray-500 bg-gray-100 px-2 py-0.5 rounded-full whitespace-nowrap self-start sm:self-center">
+                        Jan 2026 – Present
+                      </span>
+                    </div>
+                    <div className="flex flex-wrap gap-1 mt-1 mb-2">
+                      {["React", "PHP", "Next.js", "Tailwind CSS", "JSON", "Shared Hosting"].map((tech) => (
+                        <span key={tech} className="text-[10px] font-medium text-blue-700 bg-blue-50 px-1.5 py-0.2 rounded">
+                          {tech}
+                        </span>
+                      ))}
+                    </div>
+                    <ul className="list-disc ml-5 space-y-1 text-gray-700 text-xs">
+                      <li>Built a custom hybrid frontend solution using React + PHP with server-side rendering concepts for improved SEO and performance.</li>
+                      <li>Designed and developed the platform mainly for research, experimentation, portfolio showcasing, and modern frontend skill improvement.</li>
+                      <li>Avoided heavy WordPress plugins and created a lightweight custom architecture optimized for low-budget shared hosting environments.</li>
+                      <li>
+                        Developed a fully custom admin panel to manage:
+                        <ul className="list-circle ml-5 mt-0.5 space-y-0.5 text-gray-600">
+                          <li>SEO meta tags, dynamic pages, menus, custom slugs, and navigation.</li>
+                        </ul>
+                      </li>
+                      <li>Focused on performance optimization, clean UI structure, scalability, and SEO-friendly rendering strategies.</li>
+                      <li>Created reusable frontend components, animation demos, and modern CSS experiments for learning and educational purposes.</li>
+                    </ul>
+                  </div>
+
+                  {/* Project 2 */}
+                  <div>
+                    <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-1">
+                      <h4 className="font-bold text-sm text-gray-800">
+                        <a href="https://www.vasaivirar.org" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">
+                          www.vasaivirar.org
+                        </a>{" "}
+                        — Community Engagement Platform
+                      </h4>
+                      <span className="text-xs font-semibold text-gray-500 bg-gray-100 px-2 py-0.5 rounded-full whitespace-nowrap self-start sm:self-center">
+                        Jan 2025 – Present
+                      </span>
+                    </div>
+                    <div className="flex flex-wrap gap-1 mt-1 mb-2">
+                      {["WordPress (Fully Custom)", "PHP", "JavaScript", "AI-assisted Development"].map((tech) => (
+                        <span key={tech} className="text-[10px] font-medium text-blue-700 bg-blue-50 px-1.5 py-0.2 rounded">
+                          {tech}
+                        </span>
+                      ))}
+                    </div>
+                    <ul className="list-disc ml-5 space-y-1 text-gray-700 text-xs">
+                      <li>Developed a fully customized WordPress-based local community platform without using pre-built themes or heavy plugins.</li>
+                      <li>Built with AI-assisted development workflows to speed up customization and experimentation.</li>
+                      <li>
+                        Created features focused on improving local community engagement, including:
+                        <ul className="list-circle ml-5 mt-0.5 space-y-0.5 text-gray-600">
+                          <li>Local info sharing, property listings, job search, and marketplace functionality.</li>
+                        </ul>
+                      </li>
+                      <li>Customized the frontend and backend architecture to maintain flexibility, lightweight performance, and easy content management.</li>
+                      <li>Designed the platform to support user interaction, local discovery, and community-driven content.</li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li className="mb-2">
+                <b>Sportz Interactive, Mumbai</b> (Contractual, June 27, 2024 – July 2025)
                 <br />
                 Key Projects: Sportz Playground, Fantasy Engine
                 <br />
@@ -754,9 +805,8 @@ export default function Home() {
                     setSection(i);
                     setSubSection(0);
                   }}
-                  className={`px-3 py-1 rounded whitespace-nowrap ${
-                    section === i ? "bg-blue-600 text-white" : "bg-gray-200"
-                  }`}
+                  className={`px-3 py-1 rounded whitespace-nowrap ${section === i ? "bg-blue-600 text-white" : "bg-gray-200"
+                    }`}
                 >
                   {s.title}
                 </motion.button>
@@ -776,9 +826,8 @@ export default function Home() {
                   onClick={() => {
                     setSubSection(i);
                   }}
-                  className={`px-3 py-1 rounded whitespace-nowrap ${
-                    subSection === i ? "bg-blue-600 text-white" : "bg-gray-200"
-                  }`}
+                  className={`px-3 py-1 rounded whitespace-nowrap ${subSection === i ? "bg-blue-600 text-white" : "bg-gray-200"
+                    }`}
                 >
                   {item.name}
                 </motion.button>
